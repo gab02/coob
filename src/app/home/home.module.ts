@@ -6,6 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -16,9 +18,9 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    MatButtonModule
-
-  ],
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule  ],
   declarations: [
     HomeComponent,
     ListComponent
