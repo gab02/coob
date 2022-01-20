@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../../../assets/fonts/Gotham-Font/Gotham-Black.otf);
+}
+@font-face {
+  font-family: text;
+  src: url(../../../../assets/fonts/Gotham-Font/Gotham-Light.otf)  ;
+}
 .banner{
   background-image: url(../../../../assets/coobHome/banners/banner-1300x400px.png);
   background-repeat: no-repeat;
@@ -23,9 +31,109 @@ border-radius: 10px;
 
  }
 
+
  input.nosubmit {
    border: 1px solid rgba(85, 85, 85, 0.423);
    width: 100%;
    padding: 9px 4px 9px 40px;
     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
  }
+ .yellowText{
+  color: rgb(230, 162, 61);
+  font-size: 45px;
+  font-family: myFirstFont;
+ }
+
+ .blueText{
+   color: rgb(15, 15, 139);
+   font-size: 40px;
+   font-family: myFirstFont;
+
+ }
+ .destino-texto{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: myFirstFont;
+ }
+.greenButton{
+  background-color: rgb(77, 213, 108);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 80%;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-family: myFirstFont  ;
+}
+.yellowButton{
+  background-color: rgb(230, 162, 61);
+  font-size: 45px;
+  color: rgb(15, 15, 139);
+  border-radius: 15px;
+  width: 80%;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-family: myFirstFont  ;
+}
+.cardBtn{
+  background-color: rgb(25, 27, 153);  border-radius: 15px; width: 100%; height: 30px; font-size: 12px;
+color: white;
+}
+.whiteText{
+  color: rgba(255, 255, 255, 0.987);
+  font-size: 12px;
+  font-family: myFirstFont  ;
+
+}
+.pinkButton{
+  background-color: rgb(255, 255, 255);     border: 2px solid rgb(255, 0, 200) !important;
+                border-radius: 15px; width: 100%; height: 30px; font-size: 12px;
+}
+.blueTextButton{
+  margin-top: -5px;
+  color: rgb(25, 27, 153); font-size: 12px;
+  font-family: text;
+}
+.orangeButton{
+  background-color: rgb(230, 162, 61);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 80%;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-family: myFirstFont  ;
+}
+.pinkButton1{
+  background-color: rgb(230, 14, 194);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 80%;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-family: myFirstFont  ;
+}
+.pinkBanner{
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.brandText{
+  font-size: 14px;
+font-family: text;
+}
+.toolbarLeft{
+  background-image: url(../../../../assets/coobHome/components/bgrodape-1920x360px.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+height: 300px;}
