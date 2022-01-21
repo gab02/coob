@@ -1,3 +1,4 @@
+import { NgwWowService } from 'ngx-wow';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
 
   ngOnInit(): void {
   }

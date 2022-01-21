@@ -5,32 +5,69 @@
     <div class="col-md-2">
       <img src="../../../../assets/coobHome/logo/logotopo-144x33px.png">
     </div>
-    <div class="col-md-1">
-    </div>
 
-    <div class="col-md-5">
-      <button style="color: black;" mat-button>Benefícios</button>
-      <button style="color: black;" mat-button>Destino</button>
-      <button style="color: black;" mat-button>Indique+</button>
-      <button style="color: black;" mat-button>Depoimentos</button>
+
+    <div class="col-md-6">
+      <button class="navButton  btn-border-5" mat-button>Como funciona</button>
+      <button class="navButton  btn-border-5" mat-button>Promoções</button>
+      <button class="navButton  btn-border-5"mat-button>Novidades</button>
+      <button class="navButton  btn-border-5" mat-button>Indique+</button>
+      <button class="navButton  btn-border-5" mat-button>Depoimentos</button>
+      <button class="navButton  btn-border-5" mat-button>Parceiros</button>
 
     </div>
 
     <div class="col-md-2">
-      <button mat-button class="yellowButton" style="width: 100%; font-size: 16pxw;">ASSINE</button>
-
+      <div class="wow animate__animated animate__bounce" >
+      <button mat-button class="yellowButton"  style=" margin-left: 30%; width: 70%; font-size: 16px;">ASSINE</button>
+        </div>
 
     </div>
     <div class="col-md-2">
-      <button mat-raised-button
-      style="border-color: rgb(25, 27, 153); color: rgb(25, 27, 153);; border-radius: 15px; width: 100%;">LOGIN</button>
+      <button mat-button style="width: 70%;" class="blueNavButton">
+          LOGIN
+          </button>
     </div>
 
   </div>
 </nav>
+<div id="carouselExampleIndicators" class="carousel slide" style="position: relative;
+z-index:1;  " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="btn-wrap">
 
-<div class="banner" style="height: 500px; position: relative;
-z-index:1;  " >
+        <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+        <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+  </div>    </div>
+    <div class="carousel-item">
+      <div class="btn-wrap">
+
+        <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+        <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+  </div>    </div>
+    <div class="carousel-item" style="">
+      <div class="btn-wrap">
+
+      <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+      <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+</div>
+      </div>
+    </div>
+  </div>
+
+<!-- <div class="banner" style="height: 500px; " >
   <div class="container" style="padding: 1em; width: 100%;   ">
 
     <br><br><br>
@@ -53,13 +90,13 @@ z-index:1;  " >
       <div class="col-md-6"></div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="row">
   <div class="col-md-1">
   </div>
   <div class="col-md-10">
-    <div style="width: 100%; background-color: rgb(43, 44, 116); border-radius: 20px;
+    <div style="width: 100%; margin-top: -20px; background-color: rgb(43, 44, 116); border-radius: 20px;
     " >
       <div class="container" style="padding: 1em;">
         <br>
@@ -68,35 +105,147 @@ z-index:1;  " >
       </p>
       <br>
       <div class="row">
-      <div class="col-md-11">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div style="background-color: rgb(255, 255, 255);  border-radius: 10px; ">
+
+              <mat-form-field class="example-full-width" appearance="fill" style="width: 100%; height: 55px;">
+                <mat-icon matSuffix>search</mat-icon>
+
+                <input type="search" matInput  placeholder="Pesquise aqui um hotel/destino">
+              </mat-form-field>
+</div>
+            </div>
+            <div class="col-md-6">
+<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+              <mat-form-field appearance="fill" style="width: 100%; height: 55px;" >
+                <mat-label>Data de entrada e saída</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                  <input matStartDate placeholder="Check-in">
+                  <input matEndDate placeholder="Check-out">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field>
+</div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+         <div class="col-md-4">
+          <div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+          <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+            <mat-label>Quartos</mat-label>
+            <mat-select >
+              <mat-option value="option1">1</mat-option>
+              <mat-option value="option2" >2 </mat-option>
+              <mat-option value="option3"> 3</mat-option>
+              <mat-option value="option1">4</mat-option>
+              <mat-option value="option2" >5 </mat-option>
+              <mat-option value="option3"> 6</mat-option>
+              <mat-option value="option1">7</mat-option>
+              <mat-option value="option2" >8 </mat-option>
+              <mat-option value="option3"> 9</mat-option>
+            </mat-select>
+          </mat-form-field>
+</div>
+        </div>
+
+        <div class="col-md-4">
+          <div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+              <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+                <mat-label>Adultos</mat-label>
+                <mat-select >
+                  <mat-option value="option1">1</mat-option>
+                  <mat-option value="option2" >2 </mat-option>
+                  <mat-option value="option3"> 3</mat-option>
+                  <mat-option value="option1">4</mat-option>
+                  <mat-option value="option2" >5 </mat-option>
+                  <mat-option value="option3"> 6</mat-option>
+                  <mat-option value="option1">7</mat-option>
+                  <mat-option value="option2" >8 </mat-option>
+                  <mat-option value="option3"> 9</mat-option>
+                </mat-select>
+              </mat-form-field>
+</div>
+            </div>
+            <div class="col-md-4">
+              <div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+              <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+                <mat-label>Crianças</mat-label>
+                <mat-select >
+                  <mat-option value="option1">1</mat-option>
+                  <mat-option value="option2" >2 </mat-option>
+                  <mat-option value="option3"> 3</mat-option>
+                  <mat-option value="option1">4</mat-option>
+                  <mat-option value="option2" >5 </mat-option>
+                  <mat-option value="option3"> 6</mat-option>
+                  <mat-option value="option1">7</mat-option>
+                  <mat-option value="option2" >8 </mat-option>
+                  <mat-option value="option3"> 9</mat-option>
+                </mat-select>
+              </mat-form-field>
+</div>
+            </div>
+   </div>
+        </div>
+      <!-- <div class="col-md-7">
         <div class="row">
-          <div class="col-md-4">
-            <form class="nosubmit">
-              <input class="nosubmit" type="search" placeholder="Search...">
-            </form>
+          <div class="col-md-6">
+
+            <div class="form-group mt-2">
+              <input type="text" name="logpass" class="form-style"  placeholder="Pesquise aqui um hotel/destino" id="logpass" autocomplete="off">
+<mat-icon class="inputs" >search</mat-icon>
           </div>
-          <div class="col-md-2">
-            <form class="nosubmit">
-              <input class="nosubmit" type="search" placeholder="Search...">
-            </form>
           </div>
-          <div class="col-md-2">
-            <form class="nosubmit">
-              <input class="nosubmit" type="search" placeholder="Search...">
-            </form>
+          <div class="col-md-3">
+            <div class="form-group mt-2">
+              <input type="date" name="logpass"  class="form-style1" placeholder="Entrada" id="logpass" autocomplete="off">
           </div>
-          <div class="col-md-4">
-            <form class="nosubmit">
-              <input class="nosubmit" type="search" placeholder="Search...">
-            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group mt-2">
+              <input type="date" name="logpass" class="form-style1" icon="search" placeholder="Saída" id="logpass" autocomplete="off">
+          </div>
           </div>
 
         </div>
 
 
       </div>
+      <div class="col-md-4">
+        <div class="row">
+       <div class="col-md-4">
+            <div class="form-group mt-2">
+              <input type="text" name="logpass" class="form-style" icon="search" placeholder="Room" id="logpass" autocomplete="off">
+<mat-icon class="inputs" >meeting_room</mat-icon>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group mt-2">
+              <input type="text" name="logpass"  class="form-style" icon="search" placeholder="Adult" id="logpass" autocomplete="off">
+<mat-icon class="inputs" >person_pin</mat-icon>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group mt-2">
+              <input type="text" name="logpass" class="form-style" icon="search" placeholder="Child" id="logpass" autocomplete="off">
+<mat-icon class="inputs" >person_pin</mat-icon>
+          </div>
+          </div>
+ </div>
+      </div> -->
 
         <div class="col-md-1">
+
           <img src="../../../../assets/coobHome/icons/buscabotao48x48px.png">
         </div>
       </div>
@@ -121,8 +270,9 @@ z-index:1;  " >
   <!--segundo divisor-->
   <div class="row">
     <div class="col-md-4">
-<div style="margin-top: 60px;">
-  <img src="../../../../assets/coobHome/familys/imgvantagens411x504px.png">
+<div tyle="margin-top: 60px;">
+
+  <img  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png">
 </div>
 
     </div>
@@ -246,7 +396,7 @@ z-index:1;  " >
 </div>
 
 <br><br><br>
-
+<div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
 <div class="container">
   <div class="row">
     <div class="col-md-2">
@@ -260,20 +410,21 @@ z-index:1;  " >
       </div>
   </div>
 </div>
-<br><br><br>
+</div>
 
-<div class="row">
+<div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
+  <div style="padding: 3em;">
+  <div class="row">
   <div class="col-md-5"></div>
 
   <div class="col-md-2">
     <button mat-button class="yellowButton" style="width: 100%;">ASSINE</button>
-
   </div>
 
   <div class="col-md-5"></div>
-
 </div>
-<br><br>
+</div>
+</div>
 <!-- <div class="container" style="padding: 1em;">
   <div class="row">
     <div class="col-md-2">
@@ -324,13 +475,12 @@ z-index:1;  " >
         </div>
 
         <div class="col-md-4"></div>
-
       </div>
     </div>
   </div> -->
 
   <!--Quarto divisor-->
-  <div class="separator1">
+  <div class="separator1" style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
     <div class="container" style="padding: 2em;">
       <!-- <div>
         <p class="text-blue">Abrimos caminho para os</p>
@@ -584,7 +734,7 @@ z-index:1;  " >
         </button>
       </div>
 </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
           numquam
           earum quisquam officia modi excepturi perspiciatis! Suscipit repellat unde fugiat at maxime odit aliquid
@@ -612,8 +762,8 @@ z-index:1;  " >
               earum quisquam officia </div>
           </div>
         </div>
-</div>
-        <div class="row">
+</div> -->
+        <!-- <div class="row">
           <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
             numquam
             earum quisquam officia modi excepturi perspiciatis! Suscipit repellat unde fugiat at maxime odit aliquid
@@ -651,7 +801,7 @@ z-index:1;  " >
         <div class="col-md-4"></div>
 
       </div>
-    </div>
+    </div> -->
       </div>
     </div>
   </div>
@@ -747,10 +897,43 @@ z-index:1;  " >
                 </div>
               <br><br><br><br><br>
             <div class="row" style="margin-left: 10%;">
-              <div class="col-md-3">aaaaaaaaaaa</div>
-              <div class="col-md-3">aaaaaaaaaaaaaaaa</div>
-              <div class="col-md-3">aaaa</div>
-              <div class="col-md-3">aaaaaaa</div>
+              <div class="col-md-3">
+                <p class="whiteText"><B>Sobre nós</B></p>
+
+                  <li class="list-group" id="whiteText" href="#"> Coob+ </li>
+                  <li class="list-group" id="whiteText" >Como funciona</li>
+                  <li  class="list-group" id="whiteText">Politícas de uso</li>
+                  <li class="list-group" id="whiteText">Confiança e Segurança</li>
+                  <li class="list-group" id="whiteText" >Trabalhe Conosco</li>
+                  <li class="list-group" id="whiteText" >Dúvidas frequentes</li>
+
+              </div>
+              <div class="col-md-3"><p class="whiteText"><B>Acesso aos Viajantes</B></p>
+
+                <li class="list-group" id="whiteText"> Acesse sua conta </li>
+                <li class="list-group" id="whiteText" >Minhas reservas</li>
+                <li  class="list-group" id="whiteText">Indique + </li>
+                <li class="list-group" id="whiteText1"><b>Confiansça e Segurança</b></li>
+                <li class="list-group" id="whiteText" >Assine</li>
+                <li class="list-group" id="whiteText" >Hotel Credenciado</li>
+</div>
+              <div class="col-md-3"><p class="whiteText"><B>Agências Credenciadas</B></p>
+              <br>
+              <li class="list-group" id="whiteText1"><b>Vooa Viagens</b></li>
+              <li class="list-group" id="whiteText" >(54) 3111 9222</li>
+              <br>
+              <li class="list-group" id="whiteText1"><b>Nacional Turismo</b></li>
+              <li class="list-group" id="whiteText" >(54) 3111 9222</li>
+
+              </div>
+              <div class="col-md-3"><p class="whiteText"><B>Atendimento ao viajante</B></p>
+                <br>
+                <li class="list-group" id="whiteText1"><b>Central de Atendimento</b></li>
+                <li class="list-group" id="whiteText" >0300 647 4425</li>
+                <br>
+                <li class="list-group" id="whiteText1"><b>Cobrança</b></li>
+                <li class="list-group" id="whiteText" >(54) 3278 9899</li>
+  </div>
 </div>
             </div>
           </div>

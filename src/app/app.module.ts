@@ -1,3 +1,4 @@
+import { NgwWowService, NgwWowModule } from 'ngx-wow';
 import { HomeModule } from './home/home.module';
 import { HomeRoutingModule } from './home/home-routing.module';
 import { NgModule } from '@angular/core';
@@ -14,9 +15,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HomeRoutingModule,
     HomeModule,
+    NgwWowModule,
     BrowserAnimationsModule
   ],
   providers: [],
