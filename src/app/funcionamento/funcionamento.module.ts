@@ -2,7 +2,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ListComponent, HomeComponent } from './component';
+import { ListComponent,  FuncionamentoComponent } from './component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -15,8 +15,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -35,15 +33,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatDatepickerModule,
     MatSelectModule,
     NgwWowModule,
-    MatFormFieldModule,
-    MatSidenavModule,
-
-
-
-    FlexLayoutModule,
-  ],
+    MatFormFieldModule  ],
   declarations: [
-    HomeComponent,
+    FuncionamentoComponent,
     ListComponent
   ],
   providers: [
@@ -51,4 +43,4 @@ import {MatSidenavModule} from '@angular/material/sidenav';
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 
 })
-export class HomeModule { }
+export class FuncionamentoModule { }

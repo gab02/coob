@@ -1,4 +1,506 @@
+<body>
+
+  <div id="content-mobile">
+    <mat-drawer-container class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 40%;">
+<div class="container" style="padding: 1em;" >
+  <button class="navButton  btn-border-5" mat-button>Como funciona</button>
+  <button class="navButton  btn-border-5" mat-button>Promoções</button>
+  <button class="navButton  btn-border-5"mat-button>Novidades</button>
+  <button class="navButton  btn-border-5" mat-button>Indique+</button>
+  <button class="navButton  btn-border-5" mat-button>Depoimentos</button>
+  <button class="navButton  btn-border-5" mat-button>Parceiros</button>
+<br><br>
+
+<button mat-button class="yellowButton"  style="width: 100%; font-size: 16px;">ASSINE</button>
+<br><br>
+
+<button mat-button style="width: 100%;" class="blueNavButton">
+  LOGIN
+</button>
+
+</div>
+      </mat-drawer>
+<div class="container" style="padding: 0.5em;">
+
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>calendar_view_day</mat-icon>
+
+      </button>
+      <img style="text-align: center; " src="../../../../assets/coobHome/logo/logotopo-144x33px.png">
+
+    </div>
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" style="position: relative;
+    z-index:1;  " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="btn-wrap">
+
+            <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+            <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+      </div>    </div>
+        <div class="carousel-item">
+          <div class="btn-wrap">
+
+            <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+            <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+      </div>    </div>
+        <div class="carousel-item" style="">
+          <div class="btn-wrap">
+
+          <img src="../../../../assets/coobHome/banners/banner-1300x400px.png" class="d-block w-100" alt="...">
+
+          <button mat-button class="yellowButton" style="width: 200px;">VEJA MAIS</button>
+
+    </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%; margin-top: -20px; background-color: rgb(43, 44, 116); border-radius: 20px;
+      " >
+        <div class="container" style="padding: 1em;">
+          <br>
+        <p style="text-align: center;" class="destino-texto1">
+          Busque seu hotel ou seu destino
+        </p>
+        <br>
+        <div style="background-color: rgb(255, 255, 255);  border-radius: 10px; ">
+
+          <mat-form-field class="example-full-width" appearance="fill" style="width: 100%; height: 55px;">
+            <mat-icon matSuffix>search</mat-icon>
+
+            <input type="search" matInput  placeholder="Pesquise aqui um hotel/destino">
+          </mat-form-field>
+</div>
+<br>
+<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+  <mat-form-field appearance="fill" style="width: 100%; height: 55px;" >
+    <mat-label>Data de entrada e saída</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Check-in">
+      <input matEndDate placeholder="Check-out">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+</div>
+<br>
+<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+  <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+    <mat-label>Quartos</mat-label>
+    <mat-select >
+      <mat-option value="option1">1</mat-option>
+      <mat-option value="option2" >2 </mat-option>
+      <mat-option value="option3"> 3</mat-option>
+      <mat-option value="option1">4</mat-option>
+      <mat-option value="option2" >5 </mat-option>
+      <mat-option value="option3"> 6</mat-option>
+      <mat-option value="option1">7</mat-option>
+      <mat-option value="option2" >8 </mat-option>
+      <mat-option value="option3"> 9</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<br>
+<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+  <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+    <mat-label>Adultos</mat-label>
+    <mat-select >
+      <mat-option value="option1">1</mat-option>
+      <mat-option value="option2" >2 </mat-option>
+      <mat-option value="option3"> 3</mat-option>
+      <mat-option value="option1">4</mat-option>
+      <mat-option value="option2" >5 </mat-option>
+      <mat-option value="option3"> 6</mat-option>
+      <mat-option value="option1">7</mat-option>
+      <mat-option value="option2" >8 </mat-option>
+      <mat-option value="option3"> 9</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<br>
+<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+
+  <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+    <mat-label>Crianças</mat-label>
+    <mat-select >
+      <mat-option value="option1">1</mat-option>
+      <mat-option value="option2" >2 </mat-option>
+      <mat-option value="option3"> 3</mat-option>
+      <mat-option value="option1">4</mat-option>
+      <mat-option value="option2" >5 </mat-option>
+      <mat-option value="option3"> 6</mat-option>
+      <mat-option value="option1">7</mat-option>
+      <mat-option value="option2" >8 </mat-option>
+      <mat-option value="option3"> 9</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<br>
+<button mat-button style="width: 100%;" class="pinkButtonMobile">
+  BUSCAR
+  </button>
+        </div>
+        </div>
+
+
+        <div class="container" style="padding: 0.5em;">
+          <p class="blueText" style="text-align: center;">Como você pode <b class="yellowText">viajar+</b></p>
+         <div class="container" style="width: 90%;">
+          <img  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png" style="width: 350px; height: 411px;">
+          <p class="blueText" style="text-align: right;">com sua assinatura Coob+</p>
+
+        </div>
+        </div>
+        <br>
+
+  <div class="container" style="padding: 1em; background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
+    <div class="row">
+
+      <div class="col">
+        <p class="brandText">  São mais de 1.700 hotéis para você escolher onde quer ficar e explorar muitos Brasis! </p>
+      </div>
+      <div class="col">
+        <img src="../../../../assets/coobHome/icons/icoaviao-133x132px.png"
+        style="width: 100px; height: 100px;">
+            </div>
+    </div>
+    <hr style="width: 100%; color: rgb(25, 27, 153);">
+    <div class="row">
+      <div class="col">
+        <img src="../../../../assets/coobHome/icons/icohotel-133x132px.png"
+        style="width: 100px; height: 100px;">
+            </div>
+      <div class="col">
+        <p class="brandText">     Com sua assinatura de viagens Coob+ você economiza até 60% no valor das diárias hoteleiras. </p>
+      </div>
+    </div>
+    <hr style="width: 100%; color: rgb(25, 27, 153);">
+
+    <div class="row">
+
+      <div class="col">
+        <p class="brandText">  Você e seua acompanhante viajam sempre com seguro e café da manhã inclusos.</p>
+      </div>
+      <div class="col">
+        <img src="../../../../assets/coobHome/icons/icomala-133x132px.png"
+        style="width: 100px; height: 100px;">
+            </div>
+    </div>
+    <hr style="width: 100%; color: rgb(25, 27, 153);">
+
+
+  <div class="row">
+      <div class="col">
+        <img src="../../../../assets/coobHome/icons/icomontanha-133x132px.png"
+        style="width: 100px; height: 100px;">
+            </div>
+      <div class="col">
+        <p class="brandText">   Suas diárias tem até 3 anos de validade. É só planejar e viajar! </p>
+      </div>
+    </div>
+    <hr style="width: 100%; color: rgb(25, 27, 153);">
+
+    <div class="row">
+
+      <div class="col">
+        <p class="brandText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et numquam
+          earum quisquam</p>
+         </div>
+         <div class="col">
+          <img src="../../../../assets/coobHome/icons/icodirecao-133x132px.png"
+          style="width: 100px; height: 100px;">
+              </div>
+    </div>
+    <hr style="width: 100%; color: rgb(25, 27, 153);">
+
+    <div class="row">
+      <div class="col">
+        <img src="../../../../assets/coobHome/icons/icocadeira-133x132px.png  "
+        style="width: 100px; height: 100px;">
+            </div>
+      <div class="col">
+        <p class="brandText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et numquam
+          earum quisquam </p>      </div>
+    </div>
+    <br>
+</div>
+<div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
+  <div class="container" style="padding: 2em;">
+    <div style="text-align: center;">
+      <img src="../../../../assets/coobHome/familys/video759x378px.png" style="width: 100%; height: auto;">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+
+      <div class="col">
+        </div>
+        <div class="col">
+          <button mat-button class="yellowButton" style="width: 100%;">ASSINE</button>
+
+        </div>
+        <div class="col">
+        </div>
+        </div>
+        <br>
+
+        <p class="blueText1" style="margin-left: -10%; text-align: center;">As melhores ofertas</p>
+        <p class="blueText1" style="text-align: center;">para <b class="yellowText">Você viajar</b></p>
+        <br>
+        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active" >
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p class="brandText">  Summervile village hotel    </p>
+                  <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+<br>
+                  <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                </div>
+                <div class="col">
+                  <p class="brandText">  Summervile village hotel    </p>
+                  <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+<br>
+                  <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                </div>
+                <div class="col">
+                  <p class="brandText">  Summervile village hotel    </p>
+                  <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+<br>
+                  <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p class="brandText">  Summervile village hotel    </p>
+                      <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+    <br>
+                      <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                    </div>
+                    <div class="col">
+                      <p class="brandText">  Summervile village hotel    </p>
+                      <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+    <br>
+                      <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                    </div>
+                    <div class="col">
+                      <p class="brandText">  Summervile village hotel    </p>
+                      <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
+    <br>
+                      <button mat-button class="cardBtn1">Ver Hotel</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+<br><br>
+<p class="blueText1" style="text-align: center;">Leia o nosso blog e explore</p>
+<p class="yellowText1" style="text-align: center;">Muitos Brasis ;) </p>
+<div class="row">
+  <div class="col">
+</div>
+  <div class="col">
+<button mat-button class="greenButton" style="width: 100%;">BLOG COOB+</button>
+</div>
+<div class="col">
+</div>
+</div>
+<br>
+<img src="../../../../assets/coobHome/familys/imgindique442x517px.png" style="width: 350px; height: 411px;">
+<br><BR>
+
+<div class="row">
+  <div class="col">
+</div>
+  <div class="col">
+<button mat-button class="greenButton" style="width: 100%;">
+  INDIQUE+ AGORA
+  </button>
+</div>
+<div class="col">
+</div>
+</div>
+<p class="yellowText1" style="text-align: center;">Indique+</p>
+<p class="blueText1" style="text-align: center;">e ganhe muitos</p> <p class="blueText" style="text-align: center; margin-top: -10px; font-size: 48px;">DOTZ!</p>
+<div class="container" style="padding: 1em;">
+<img src="../../../../assets/coobHome/components/img-depoimento (1).png" style="width: 100%; height: 100%;" >
+</div>
+<p class="blueText1" style="text-align: center;">Com os <b class="yellowText1">Parceiros Coob+</b></p>
+
+<p class="blueText1" style=" text-align: center;">Você tem + vantagens</p>
+
+</div>
+<!--
+<div id="carouselExampleIndicators4" class="carousel slide"  data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" >
+      <div style="width: 100%;" >
+        <div class="row" >
+        <div class="col">
+          <div>
+          <img width="100px" height="100px" src="../../../../assets/coobHome/patrocinadores/parceiroativa216x85px.png"  >
+          </div>
+        </div>
+
+          <div class="col">
+            <div>
+            <img  width="100px" height="100px"src="../../../../assets/coobHome/patrocinadores/parceirofiel139x111px.png"  >
+            </div>
+          </div>
+
+          <div class="col">
+            <div >
+            <img width="100px" height="100px" src="../../../../assets/coobHome/patrocinadores/parceiropan149x84px.png"  >
+            </div>
+          </div>
+          <div class="col">
+            <div >
+            <img  width="100px" height="100px"src="../../../../assets/coobHome/patrocinadores/parceiropan187x54px.png"  >
+            </div>
+          </div>
+          </div>
+          </div>
+</div>
+</div>
+</div> -->
+<div class="toolbarLeftMobile">
+  <div class="container">
+    <div style="padding: 2em;">
+  <img src="../../../../assets/coobHome/logo/rodapecoob289x78px.png">
+  <p class="whiteText"> Assine nossa newsletter e receba novidades</p>
+ </div>
+ <div style="padding: 3em;">
+  <form class="nosubmit">
+    <input class="nosubmit" placeholder="Insira seu melhor email"><br>
+    <button mat-button class="pinkButton1" style=" height: 40px; width: 110%; margin-left: -5%; text-align: center;">ENVIAR </button>
+
+  </form>
+  <BR>
+  </div>
+  <p id="whiteText1"><b>SIGA A COOB+</b></p>
+  <p id="whiteText">NAS REDES SOCIAS</p>
+</div>
+<div class="flex-container ">
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeface-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeinsta-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeyt-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapelinkedin-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapespotify-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img  style="width: 35px; height: 35px;"src="../../../../assets/coobHome/socialMedias/rodapestiktok-60x59px.png">
+  </div>
+  <div style="padding: 0.5em;">
+  <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeblog-60x59px.png">
+  </div>
+<BR>
+
+</div>
+<br><br>
+
+<div class="container" style="padding: 2em;">
+<div class="row">
+  <div class="col">
+  <p class="whiteText"><B>Sobre nós</B></p>
+
+  <li class="list-group" id="whiteText" href="#"> Coob+ </li>
+  <li class="list-group" id="whiteText" >Como funciona</li>
+  <li  class="list-group" id="whiteText">Politícas de uso</li>
+  <li class="list-group" id="whiteText">Confiança e Segurança</li>
+  <li class="list-group" id="whiteText" >Trabalhe Conosco</li>
+  <li class="list-group" id="whiteText" >Dúvidas frequentes</li>
+</div>
+<div class="col">
+  <p class="whiteText"><B>Acesso aos Viajantes</B></p>
+
+  <li class="list-group" id="whiteText"> Acesse sua conta </li>
+  <li class="list-group" id="whiteText" >Minhas reservas</li>
+  <li  class="list-group" id="whiteText">Indique + </li>
+  <li class="list-group" id="whiteText1"><b>Confiansça e Segurança</b></li>
+  <li class="list-group" id="whiteText" >Assine</li>
+  <li class="list-group" id="whiteText" >Hotel Credenciado</li>
+</div>
+</div>
+<div class="row">
+  <div class="col">
+    <p class="whiteText">
+        <B>Agências Credenciadas</B></p>
+              <br>
+              <li class="list-group" id="whiteText1"><b>Vooa Viagens</b></li>
+              <li class="list-group" id="whiteText" >(54) 3111 9222</li>
+              <br>
+              <li class="list-group" id="whiteText1"><b>Nacional Turismo</b></li>
+              <li class="list-group" id="whiteText" >(54) 3111 9222</li>
+  </div>
+  <div class="col">
+    <p class="whiteText"><B>Atendimento ao viajante</B></p>
+                <br>
+                <li class="list-group" id="whiteText1"><b>Central de Atendimento</b></li>
+                <li class="list-group" id="whiteText" >0300 647 4425</li>
+                <br>
+                <li class="list-group" id="whiteText1"><b>Cobrança</b></li>
+                <li class="list-group" id="whiteText" >(54) 3278 9899</li>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+    </mat-drawer-container>
+
+  </div>
+
+  <!-- aparecer no mobile -->
+  <div id="content-desktop">
+
+
+
 <!--primeiro divisor-->
+<div class="mobile-hide">
 
 <nav class="navbar-brand" >
   <div class="row" style="padding: 1em; ">
@@ -270,8 +772,8 @@ z-index:1;  " data-bs-ride="carousel">
   <!--segundo divisor-->
   <div class="row">
     <div class="col-md-4">
-<div tyle="margin-top: 60px;">
-
+<div style="margin-top: 60px;">
+<br><br><br>
   <img  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png">
 </div>
 
@@ -395,7 +897,10 @@ z-index:1;  " data-bs-ride="carousel">
   </div></div>
 </div>
 
-<br><br><br>
+
+
+
+
 <div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
 <div class="container">
   <div class="row">
@@ -479,8 +984,11 @@ z-index:1;  " data-bs-ride="carousel">
     </div>
   </div> -->
 
+
   <!--Quarto divisor-->
-  <div class="separator1" style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
+  <div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
+
+  <div class="separator1">
     <div class="container" style="padding: 2em;">
       <!-- <div>
         <p class="text-blue">Abrimos caminho para os</p>
@@ -489,17 +997,14 @@ z-index:1;  " data-bs-ride="carousel">
         <p class="text-blue">sonhos de quem<b class="pink"> ama Viajar</b></p>
       </div> -->
       <p class="blueText" style="margin-left: -10%; text-align: center;">As melhores ofertas</p>
-
-      <br>
       <p class="blueText" style="text-align: center;">para <b class="yellowText">Você viajar</b></p>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
 
           <div class="carousel-item active" >
           <div class="container">
-            <div class="row" style=" margin-top: -15%; padding: 15em;">
+            <div class="row" style=" margin-top: -15%; padding: 10em;">
               <div class="col-md-4">
             <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
             <br>
@@ -613,7 +1118,7 @@ z-index:1;  " data-bs-ride="carousel">
           </div>
           <div class="carousel-item">
             <div class="container">
-              <div class="row"  style=" margin-top: -15%; padding: 15em;">
+              <div class="row"  style=" margin-top: -15%; padding: 10em;">
                 <div class="col-md-4">
                   <img src="../../../../assets/coobHome/familys/imgpromocao232x228px.png" class="d-block w-100" alt="...">
                   <br>
@@ -724,96 +1229,27 @@ z-index:1;  " data-bs-ride="carousel">
             </div>
             </div>
             </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
            <img src="../../../../assets/coobHome/icons/setahotel01-28x27px.png">
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
           <img src="../../../../assets/coobHome/icons/setahotel02-28x27px.png">
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 </div>
-      <!-- <div class="row">
-        <div class="col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-          numquam
-          earum quisquam officia modi excepturi perspiciatis! Suscipit repellat unde fugiat at maxime odit aliquid
-          reiciendis?</div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">aqui vai a foto e uma bucetada de texto</div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-              numquam
-              earum quisquam officia </div>
-            <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-              numquam
-              earum quisquam officia </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-              numquam
-              earum quisquam officia </div>
-            <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-              numquam
-              earum quisquam officia </div>
-          </div>
-        </div>
-</div> -->
-        <!-- <div class="row">
-          <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-            numquam
-            earum quisquam officia modi excepturi perspiciatis! Suscipit repellat unde fugiat at maxime odit aliquid
-            reiciendis?</div>
-          <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et
-            numquam
-            earum quisquam officia modi excepturi perspiciatis! Suscipit repellat unde fugiat at maxime odit aliquid
-            reiciendis?</div>
-        </div>
-
-        <div style="padding: 1em;">
-          <div class="row">
-            <div class="col-md-4"></div>
-
-            <div class="col-md-4">
-              <button mat-raised-button
-                style="background-color: rgb(241, 196, 12); color: #fff; border-radius: 20px; width: 100%;">Assine</button>
-            </div>
-
-            <div class="col-md-4"></div>
-
-          </div>
-        </div>
-
-
-    <div style="padding: 1em;">
-      <div class="row">
-        <div class="col-md-4"></div>
-
-        <div class="col-md-4">
-          <button mat-raised-button
-            style="background-color: rgb(241, 196, 12); color: #fff; border-radius: 20px; width: 100%;">Assine</button>
-        </div>
-
-        <div class="col-md-4"></div>
-
-      </div>
-    </div> -->
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="container">
           <br><br><br>          <br><br><br>
-          <br><br><br>
-<p class="blueText">Leia o nosso </p><br> <p class="blueText" style="text-align: right;">blog e explore</p>
-<br>
+<p class="blueText">Leia o nosso </p> <p class="blueText" style="text-align: right;">blog e explore</p>
 <p class="yellowText">Muitos Brasis ;) </p>
 <br>
 <div class="row">
@@ -832,9 +1268,9 @@ z-index:1;  " data-bs-ride="carousel">
           <br><br><br>          <br><br><br>
 
           <p class="yellowText" style="text-align: center;">Indique+ </p>
-<br>
 
-<p class="blueText" style="text-align: center;">e ganhe muitos</p><br> <p class="blueText" style="text-align: center; font-size: 48px;">DOTZ!</p>
+
+<p class="blueText" style="text-align: center;">e ganhe muitos</p> <p class="blueText" style="text-align: center; font-size: 48px;">DOTZ!</p>
 <br>
 <div class="row">
 <div class="col-md-3"></div>
@@ -845,7 +1281,7 @@ z-index:1;  " data-bs-ride="carousel">
         </div>
       </div>
 </div>
-<div class="container" style="padding: 5em;">
+<div class="flex-container" >
 <img src="../../../../assets/coobHome/components/img-depoimento (1).png" >
 
 </div>
@@ -853,11 +1289,87 @@ z-index:1;  " data-bs-ride="carousel">
 <div class="container" style="padding: 2em;">
   <p class="blueText" style="text-align: center;">Com os <b class="yellowText">Parceiros Coob+</b></p>
 
-
-  <br>
   <p class="blueText" style="margin-left: 20%; text-align: center;">Você tem + vantagens</p>
 
   </div>
+  <div class="row">
+    <div class="col-md-1">
+      </div>
+      <div class="col-md-10">
+  <div id="carouselExampleIndicators2" class="carousel slide"  data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" >
+        <div style="width: 100%;" class="flex-container">
+          <div class="row" >
+          <div class="col-md-3">
+            <div style="padding: 2em;">
+            <img src="../../../../assets/coobHome/patrocinadores/parceiroativa216x85px.png"  >
+            </div>
+          </div>
+
+            <div class="col-md-3">
+              <div style="padding: 2em;">
+              <img src="../../../../assets/coobHome/patrocinadores/parceirofiel139x111px.png"  >
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div style="padding: 2em;">
+              <img src="../../../../assets/coobHome/patrocinadores/parceiropan149x84px.png"  >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div style="padding: 2em;">
+              <img src="../../../../assets/coobHome/patrocinadores/parceiropan187x54px.png"  >
+              </div>
+            </div>
+
+      </div>
+      </div>
+      </div>
+      <div class="carousel-item   " >
+        <div style="width: 100%;" class="flex-container">
+          <div class="row" >
+            <div class="col-md-3">
+              <div style="padding: 2em;">
+              <img src="../../../../assets/coobHome/patrocinadores/parceiroativa216x85px.png"  >
+              </div>
+            </div>
+
+              <div class="col-md-3">
+                <div style="padding: 2em;">
+                <img src="../../../../assets/coobHome/patrocinadores/parceirofiel139x111px.png"  >
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div style="padding: 2em;">
+                <img src="../../../../assets/coobHome/patrocinadores/parceiropan149x84px.png"  >
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div style="padding: 2em;">
+                <img src="../../../../assets/coobHome/patrocinadores/parceiropan187x54px.png"  >
+                </div>
+              </div>
+
+        </div>
+      </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+       <img src="../../../../assets/coobHome/icons/setahotel01-28x27px.png">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+      <img src="../../../../assets/coobHome/icons/setahotel02-28x27px.png">
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+<div class="col-md-1"></div>
+</div>
 <div class="row">
   <div class="col-md-12">
   <div class="toolbarLeft">
@@ -887,15 +1399,44 @@ z-index:1;  " data-bs-ride="carousel">
 
           <div class="col-md-8">
             <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  </div>
-                  <div class="col-md-6">
+              <br><br><br>              <br>
+              <div class="row"  style="margin-left: 10%;">
+                <div class="col-md-4">
+          <p id="whiteText1"><b>SIGA A COOB+</b></p>
+          <p id="whiteText">NAS REDES SOCIAS</p>
+
+        </div>
+                  <div class="col-md-5" style="margin-top: -5px;">
+                    <div class="flex-container ">
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeface-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeinsta-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeyt-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapelinkedin-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapespotify-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img  style="width: 35px; height: 35px;"src="../../../../assets/coobHome/socialMedias/rodapestiktok-60x59px.png">
+                      </div>
+                      <div style="padding: 0.5em;">
+                      <img style="width: 35px; height: 35px;" src="../../../../assets/coobHome/socialMedias/rodapeblog-60x59px.png">
+                      </div>
+
+
+                    </div>
                   </div>
                   <div class="col-md-3">
                   </div>
                 </div>
-              <br><br><br><br><br>
+
             <div class="row" style="margin-left: 10%;">
               <div class="col-md-3">
                 <p class="whiteText"><B>Sobre nós</B></p>
@@ -942,3 +1483,7 @@ z-index:1;  " data-bs-ride="carousel">
       </div>
       </div>
 </div>
+</div>
+</div>
+
+</body>

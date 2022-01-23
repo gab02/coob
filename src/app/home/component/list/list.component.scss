@@ -1,3 +1,17 @@
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
+
+///MOBILE
+
+
 @font-face {
   font-family: myFirstFont;
   src: url(../../../../assets/fonts/Gotham-Font/Gotham-Black.otf);
@@ -43,7 +57,17 @@ border-radius: 10px;
   font-size: 45px;
   font-family: myFirstFont;
  }
+ .yellowText1{
+  color: rgb(230, 162, 61);
+  font-size: 35px;
+  font-family: myFirstFont;
+ }
+ .blueText1{
+  color: rgb(15, 15, 139);
+  font-size: 30px;
+  font-family: myFirstFont;
 
+}
  .blueText{
    color: rgb(15, 15, 139);
    font-size: 40px;
@@ -53,6 +77,11 @@ border-radius: 10px;
  .destino-texto{
   color: rgb(255, 255, 255);
   font-size: 25px;
+  font-family: myFirstFont;
+ }
+ .destino-texto1{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
   font-family: myFirstFont;
  }
 .greenButton{
@@ -123,6 +152,11 @@ border-radius: 10px;
   background-color: rgb(25, 27, 153);  border-radius: 15px; width: 100%; height: 30px; font-size: 12px;
 color: white;
 }
+.cardBtn1{
+  background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 200) !important;
+  border-radius: 15px; width: 100%;  font-size: 12px;
+}
 #whiteText{
   color: rgba(255, 255, 255, 0.987);
   font-size: 12px;
@@ -181,6 +215,11 @@ color: white;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-self:center;
 }
 
 .form-style1 {
@@ -285,6 +324,17 @@ color: white;
   align-self: center;
   font-family: myFirstFont  ;
 }
+.pinkButtonMobile{
+  background-color: rgb(255, 0, 200);
+  color: rgb(252, 252, 252);
+  border-radius: 20px;
+  width: 80%;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-family: myFirstFont  ;
+}
 .pinkButton{
   background-color: rgb(255, 255, 255);     border: 2px solid rgb(255, 0, 200) !important;
                 border-radius: 15px; width: 100%;  font-size: 12px;
@@ -334,3 +384,10 @@ font-family: text;
   width: 100%;
   background-size: cover;
 height: 300px;}
+
+.toolbarLeftMobile{
+  background-image: url(../../../../assets/coobHome/components/rodapemobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+height: 100%;}

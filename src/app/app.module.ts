@@ -7,6 +7,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FuncionamentoRoutingModule } from './funcionamento/funcionamento-routing.module';
+import { FuncionamentoModule } from './funcionamento';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeRoutingModule,
     HomeModule,
     NgwWowModule,
-    BrowserAnimationsModule
+    FuncionamentoRoutingModule,
+    FuncionamentoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

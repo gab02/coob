@@ -1,4 +1,3 @@
-import { NgwWowService } from 'ngx-wow';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  showFiller = false;
 
-  constructor(private wowService: NgwWowService) {
-    this.wowService.init();
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
