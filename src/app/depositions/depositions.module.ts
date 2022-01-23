@@ -1,10 +1,11 @@
+import { DepositionsComponent } from './component/depositions.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ListComponent,  FuncionamentoComponent } from './component';
+import { ListComponent } from './component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -45,7 +46,7 @@ import {MatCardModule} from '@angular/material/card';
 
     FlexLayoutModule,  ],
   declarations: [
-    FuncionamentoComponent,
+    DepositionsComponent,
     ListComponent
   ],
   providers: [
@@ -53,4 +54,4 @@ import {MatCardModule} from '@angular/material/card';
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 
 })
-export class FuncionamentoModule { }
+export class  DepositionsModule { }

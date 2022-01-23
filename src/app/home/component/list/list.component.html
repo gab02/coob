@@ -3,13 +3,13 @@
   <div id="content-mobile">
     <mat-drawer-container class="example-container" autosize>
       <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 40%;">
-<div class="container" style="padding: 1em;" >
-  <button class="navButton  btn-border-5" mat-button>Como funciona</button>
-  <button class="navButton  btn-border-5" mat-button>Promoções</button>
-  <button class="navButton  btn-border-5"mat-button>Novidades</button>
-  <button class="navButton  btn-border-5" mat-button>Indique+</button>
-  <button class="navButton  btn-border-5" mat-button>Depoimentos</button>
-  <button class="navButton  btn-border-5" mat-button>Parceiros</button>
+<div class="container wow animate__animated animate__fadeInLeft" style="padding: 1em;" >
+  <button class="navButton  btn-border-5" mat-button (click)="howWork()">Como funciona</button>
+  <button class="navButton  btn-border-5" mat-button (click)="promotions()">Promoções</button>
+  <button class="navButton  btn-border-5"mat-button  (click)="news()"> Novidades</button>
+  <button class="navButton  btn-border-5" mat-button (click)="home()">Indique+</button>
+  <button class="navButton  btn-border-5" mat-button (click)="depostiions()">Depoimentos</button>
+  <button class="navButton  btn-border-5" mat-button (click)="partners()">Parceiros</button>
 <br><br>
 
 <button mat-button class="yellowButton"  style="width: 100%; font-size: 16px;">ASSINE</button>
@@ -74,7 +74,7 @@
       " >
         <div class="container" style="padding: 1em;">
           <br>
-        <p style="text-align: center;" class="destino-texto1">
+        <p style="text-align: center;" class="destino-texto1 wow animate__animated animate__fadeInUp">
           Busque seu hotel ou seu destino
         </p>
         <br>
@@ -87,7 +87,7 @@
           </mat-form-field>
 </div>
 <br>
-<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+<div class="wow animate__animated animate__zoomInLeft" style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
   <mat-form-field appearance="fill" style="width: 100%; height: 55px;" >
     <mat-label>Data de entrada e saída</mat-label>
     <mat-date-range-input [rangePicker]="picker">
@@ -99,9 +99,9 @@
   </mat-form-field>
 </div>
 <br>
-<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+<div class="wow animate__animated animate__zoomInRight" style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
 
-  <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
+  <mat-form-field  appearance="fill" style="width: 100%; height: 55px;">
     <mat-label>Quartos</mat-label>
     <mat-select >
       <mat-option value="option1">1</mat-option>
@@ -117,7 +117,7 @@
   </mat-form-field>
 </div>
 <br>
-<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+<div class="wow animate__animated animate__zoomInLeft" style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
 
   <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
     <mat-label>Adultos</mat-label>
@@ -135,7 +135,7 @@
   </mat-form-field>
 </div>
 <br>
-<div style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
+<div class="wow animate__animated animate__zoomInRight" style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
 
   <mat-form-field appearance="fill" style="width: 100%; height: 55px;">
     <mat-label>Crianças</mat-label>
@@ -161,17 +161,17 @@
 
 
         <div class="container" style="padding: 0.5em;">
-          <p class="blueText" style="text-align: center;">Como você pode <b class="yellowText">viajar+</b></p>
+          <p class="blueText wow animate__animated animate__fadeInLeftBig" style=" animation-delay: 0.5s;text-align: center;">Como você pode <b class="yellowText">viajar+</b></p>
          <div class="container" style="width: 90%;">
-          <img  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png" style="width: 350px; height: 411px;">
-          <p class="blueText" style="text-align: right;">com sua assinatura Coob+</p>
+          <img class="wow animate__animated animate__zoomIn"  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png" style="width: 350px; height: 411px;">
+          <p class="blueText wow animate__animated animate__slideInLeft" style="text-align: right;">com sua assinatura Coob+</p>
 
         </div>
         </div>
         <br>
 
   <div class="container" style="padding: 1em; background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp ">
 
       <div class="col">
         <p class="brandText">  São mais de 1.700 hotéis para você escolher onde quer ficar e explorar muitos Brasis! </p>
@@ -182,7 +182,7 @@
             </div>
     </div>
     <hr style="width: 100%; color: rgb(25, 27, 153);">
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp">
       <div class="col">
         <img src="../../../../assets/coobHome/icons/icohotel-133x132px.png"
         style="width: 100px; height: 100px;">
@@ -193,7 +193,7 @@
     </div>
     <hr style="width: 100%; color: rgb(25, 27, 153);">
 
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp">
 
       <div class="col">
         <p class="brandText">  Você e seua acompanhante viajam sempre com seguro e café da manhã inclusos.</p>
@@ -206,7 +206,7 @@
     <hr style="width: 100%; color: rgb(25, 27, 153);">
 
 
-  <div class="row">
+  <div class="row wow animate__animated animate__fadeInUp">
       <div class="col">
         <img src="../../../../assets/coobHome/icons/icomontanha-133x132px.png"
         style="width: 100px; height: 100px;">
@@ -217,7 +217,7 @@
     </div>
     <hr style="width: 100%; color: rgb(25, 27, 153);">
 
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp">
 
       <div class="col">
         <p class="brandText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab impedit quo sed, et numquam
@@ -230,7 +230,7 @@
     </div>
     <hr style="width: 100%; color: rgb(25, 27, 153);">
 
-    <div class="row">
+    <div class="row wow animate__animated animate__fadeInUp">
       <div class="col">
         <img src="../../../../assets/coobHome/icons/icocadeira-133x132px.png  "
         style="width: 100px; height: 100px;">
@@ -242,7 +242,7 @@
     <br>
 </div>
 <div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
-  <div class="container" style="padding: 2em;">
+  <div class="container wow animate__animated animate__zoomIn" style="padding: 2em;">
     <div style="text-align: center;">
       <img src="../../../../assets/coobHome/familys/video759x378px.png" style="width: 100%; height: auto;">
       </div>
@@ -252,7 +252,7 @@
 
       <div class="col">
         </div>
-        <div class="col">
+        <div class="col  wow animate__animated animate__zoomInDown">
           <button mat-button class="yellowButton" style="width: 100%;">ASSINE</button>
 
         </div>
@@ -261,8 +261,8 @@
         </div>
         <br>
 
-        <p class="blueText1" style="margin-left: -10%; text-align: center;">As melhores ofertas</p>
-        <p class="blueText1" style="text-align: center;">para <b class="yellowText">Você viajar</b></p>
+        <p class="blueText1  wow animate__animated animate__slideInLeft" style="margin-left: -10%; text-align: center;">As melhores ofertas</p>
+        <p class="blueText1  wow animate__animated animate__slideInRight" style="text-align: center;">para <b class="yellowText">Você viajar</b></p>
         <br>
         <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
 
@@ -326,8 +326,8 @@
             </div>
               </div>
 <br><br>
-<p class="blueText1" style="text-align: center;">Leia o nosso blog e explore</p>
-<p class="yellowText1" style="text-align: center;">Muitos Brasis ;) </p>
+<p class="blueText1 wow animate__animated animate__slideInRight" style="text-align: center;">Leia o nosso blog e explore</p>
+<p class="yellowText1 wow animate__animated animate__slideInLeft" style="text-align: center;">Muitos Brasis ;) </p>
 <div class="row">
   <div class="col">
 </div>
@@ -338,7 +338,7 @@
 </div>
 </div>
 <br>
-<img src="../../../../assets/coobHome/familys/imgindique442x517px.png" style="width: 350px; height: 411px;">
+<img class="wow animate__animated animate__zoomIn" src="../../../../assets/coobHome/familys/imgindique442x517px.png" style="width: 350px; height: 411px;">
 <br><BR>
 
 <div class="row">
@@ -352,9 +352,9 @@
 <div class="col">
 </div>
 </div>
-<p class="yellowText1" style="text-align: center;">Indique+</p>
-<p class="blueText1" style="text-align: center;">e ganhe muitos</p> <p class="blueText" style="text-align: center; margin-top: -10px; font-size: 48px;">DOTZ!</p>
-<div class="container" style="padding: 1em;">
+<p class="yellowText1 wow animate__animated animate__slideInLeft" style="text-align: center;">Indique+</p>
+<p class="blueText1 wow animate__animated animate__slideInRight" style="text-align: center;">e ganhe muitos</p> <p class="blueText" style="text-align: center; margin-top: -10px; font-size: 48px;">DOTZ!</p>
+<div class="container wow animate__animated animate__rollIn" style="padding: 1em;">
 <img src="../../../../assets/coobHome/components/img-depoimento (1).png" style="width: 100%; height: 100%;" >
 </div>
 <p class="blueText1" style="text-align: center;">Com os <b class="yellowText1">Parceiros Coob+</b></p>
@@ -446,7 +446,7 @@
   <p class="whiteText"><B>Sobre nós</B></p>
 
   <li class="list-group" id="whiteText" href="#"> Coob+ </li>
-  <li class="list-group" id="whiteText" >Como funciona</li>
+  <li class="list-group" id="whiteText"(click)="howWork()" >Como funciona</li>
   <li  class="list-group" id="whiteText">Politícas de uso</li>
   <li class="list-group" id="whiteText">Confiança e Segurança</li>
   <li class="list-group" id="whiteText" >Trabalhe Conosco</li>
@@ -504,28 +504,26 @@
 
 <nav class="navbar-brand" >
   <div class="row" style="padding: 1em; ">
-    <div class="col-md-2">
+    <div (click)="home()" class="col-md-2 wow animate__animated animate__flipInY" style="animation-delay: 0.5s;" >
       <img src="../../../../assets/coobHome/logo/logotopo-144x33px.png">
     </div>
 
 
     <div class="col-md-6">
-      <button class="navButton  btn-border-5" mat-button>Como funciona</button>
-      <button class="navButton  btn-border-5" mat-button>Promoções</button>
-      <button class="navButton  btn-border-5"mat-button>Novidades</button>
-      <button class="navButton  btn-border-5" mat-button>Indique+</button>
-      <button class="navButton  btn-border-5" mat-button>Depoimentos</button>
-      <button class="navButton  btn-border-5" mat-button>Parceiros</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="howWork()" mat-button>Como funciona</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="promotions()" mat-button>Promoções</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="news()" mat-button>Novidades</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="howWork()" mat-button>Indique+</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="depostiions()" mat-button>Depoimentos</button>
+      <button class="wow animate__animated animate__backInLeft  navButton  btn-border-5" style="animation-delay: 0.5s;" (click)="partners()" mat-button>Parceiros</button>
 
     </div>
 
-    <div class="col-md-2">
-      <div class="wow animate__animated animate__bounce" >
+    <div class="col-md-2 wow animate__animated animate__zoomInRight" style="animation-delay: 0.5s;" >
       <button mat-button class="yellowButton"  style=" margin-left: 30%; width: 70%; font-size: 16px;">ASSINE</button>
-        </div>
 
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 wow animate__animated animate__zoomInRight" style="animation-delay: 0.5s;">
       <button mat-button style="width: 70%;" class="blueNavButton">
           LOGIN
           </button>
@@ -533,12 +531,12 @@
 
   </div>
 </nav>
-<div id="carouselExampleIndicators" class="carousel slide" style="position: relative;
+<div id="carouselExampleIndicators6" class="carousel slide" style="position: relative;
 z-index:1;  " data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -598,7 +596,7 @@ z-index:1;  " data-bs-ride="carousel">
   <div class="col-md-1">
   </div>
   <div class="col-md-10">
-    <div style="width: 100%; margin-top: -20px; background-color: rgb(43, 44, 116); border-radius: 20px;
+    <div class="wow animate__animated animate__backInDown" style="animation-delay: 0.5s;" style="width: 100%; margin-top: -20px; background-color: rgb(43, 44, 116); border-radius: 20px;
     " >
       <div class="container" style="padding: 1em;">
         <br>
@@ -772,7 +770,7 @@ z-index:1;  " data-bs-ride="carousel">
   <!--segundo divisor-->
   <div class="row">
     <div class="col-md-4">
-<div style="margin-top: 60px;">
+<div style="margin-top: 60px;" style="animation-delay: 0.5s;"class="wow animate__animated animate__zoomIn">
 <br><br><br>
   <img  src="../../../../assets/coobHome/familys/imgvantagens411x504px.png">
 </div>
@@ -783,14 +781,14 @@ z-index:1;  " data-bs-ride="carousel">
   <div class="separator1">
     <div class="container" style="padding: 2em;">
 
-        <p class="blueText" style="text-align: center;">Como você pode <b class="yellowText">viajar+</b></p>
+        <p class="blueText wow animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s; text-align: center;">Como você pode <b class="yellowText">viajar+</b></p>
         <br>
-        <p class="blueText" style="text-align: right;">com sua assinatura Coob+</p>
+        <p class="blueText wow animate__animated animate__fadeInRightBig" style="animation-delay: 0.8s; text-align: right;">com sua assinatura Coob+</p>
 <!-- SECTION ONE FOR CIRCLE ROWS AND COLS DESCRIPTIPONS -->
 <br>
       <div style="padding: 2em;">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 wow animate__animated animate__flipInX"style="animation-delay: 0.5s;" >
           <div class="row" style="margin-top:-20px ;">
             <div class="col-md-2">
               <img src="../../../../assets/coobHome/icons/icoaviao-133x132px.png"
@@ -806,7 +804,7 @@ z-index:1;  " data-bs-ride="carousel">
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow animate__animated animate__flipInX" style="animation-delay: 0.5s;">
           <div class="row" style="margin-left:-40px ;">
             <div class="col-md-2">
               <img src="../../../../assets/coobHome/icons/icohotel-133x132px.png"
@@ -815,8 +813,10 @@ z-index:1;  " data-bs-ride="carousel">
             </div>
           <div class="col-md-8">
             <br>
+            <div class="wow backInUp" style="animation-delay: 0.5s;">
             <p class="brandText">     Com sua assinatura de viagens Coob+ você economiza até 60% no valor das diárias hoteleiras. </p>
-            </div>
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -825,7 +825,7 @@ z-index:1;  " data-bs-ride="carousel">
  <!-- SECTION TWO FOR CIRCLE ROWS AND COLS DESCRIPTIPONS -->
  <div style="padding: 2em;">
  <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-6 wow animate__animated animate__flipInX" style="animation-delay: 0.5s;">
     <div class="row" style="margin-left:10px ;">
       <div class="col-md-2">
         <img src="../../../../assets/coobHome/icons/icomala-133x132px.png"
@@ -839,7 +839,7 @@ z-index:1;  " data-bs-ride="carousel">
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 wow animate__animated animate__flipInX" style="animation-delay: 0.5s;">
     <div class="row" style="margin-left:-50px ;">
       <div class="col-md-2">
         <img src="../../../../assets/coobHome/icons/icomontanha-133x132px.png"
@@ -860,7 +860,7 @@ z-index:1;  " data-bs-ride="carousel">
   <div style="padding: 2em;">
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 wow animate__animated animate__flipInX" style="animation-delay: 0.5s;">
       <div class="row">
         <div class="col-md-2">
           <img src="../../../../assets/coobHome/icons/icodirecao-133x132px.png"
@@ -874,7 +874,7 @@ z-index:1;  " data-bs-ride="carousel">
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 wow animate__animated animate__flipInX" style="animation-delay: 0.5s;">
       <div class="row">
         <div class="col-md-2">
           <img src="../../../../assets/coobHome/icons/icocadeira-133x132px.png  "
@@ -902,13 +902,13 @@ z-index:1;  " data-bs-ride="carousel">
 
 
 <div  style="background-image: url(../../../../assets/coobHome/components/bgpadrao1920x571px.png);">
-<div class="container">
+  <div class="container wow animate__animated animate__zoomIn" style="animation-delay: 0.5s;">
   <div class="row">
     <div class="col-md-2">
       </div>
       <div class="col-md-8">
-        <div style="text-align: center;">
-        <img src="../../../../assets/coobHome/familys/video759x378px.png">
+        <div  style="text-align: center;">
+          <img src="../../../../assets/coobHome/familys/video759x378px.png">
         </div>
       </div>
       <div class="col-md-2">
@@ -1246,7 +1246,7 @@ z-index:1;  " data-bs-ride="carousel">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 wow animate__animated animate__zoomInLeft" style="animation-delay: 0.5s;">
         <div class="container">
           <br><br><br>          <br><br><br>
 <p class="blueText">Leia o nosso </p> <p class="blueText" style="text-align: right;">blog e explore</p>
@@ -1260,10 +1260,10 @@ z-index:1;  " data-bs-ride="carousel">
 </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 wow animate__animated animate__zoomIn " style="animation-delay: 0.3s;">
         <img src="../../../../assets/coobHome/familys/imgindique442x517px.png">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 wow animate__animated animate__zoomInRight" style="animation-delay: 0.5s;">
         <div class="container">
           <br><br><br>          <br><br><br>
 
@@ -1281,15 +1281,15 @@ z-index:1;  " data-bs-ride="carousel">
         </div>
       </div>
 </div>
-<div class="flex-container" >
+<div class="flex-container wow animate__animated animate__slideInDown" style="animation-delay: 0.5s;" >
 <img src="../../../../assets/coobHome/components/img-depoimento (1).png" >
 
 </div>
 </div>
 <div class="container" style="padding: 2em;">
-  <p class="blueText" style="text-align: center;">Com os <b class="yellowText">Parceiros Coob+</b></p>
+  <p class="blueText wow animate__animated animate__fadeInLeftBig" style=" animation-delay: 0.5s;text-align: center;">Com os <b class="yellowText">Parceiros Coob+</b></p>
 
-  <p class="blueText" style="margin-left: 20%; text-align: center;">Você tem + vantagens</p>
+  <p class="blueText wow animate__animated animate__fadeInRightBig" style=" animation-delay: 0.5s;margin-left: 20%; text-align: center;">Você tem + vantagens</p>
 
   </div>
   <div class="row">
@@ -1442,7 +1442,7 @@ z-index:1;  " data-bs-ride="carousel">
                 <p class="whiteText"><B>Sobre nós</B></p>
 
                   <li class="list-group" id="whiteText" href="#"> Coob+ </li>
-                  <li class="list-group" id="whiteText" >Como funciona</li>
+                  <li class="list-group" id="whiteText" (click)="howWork()" >Como funciona</li>
                   <li  class="list-group" id="whiteText">Politícas de uso</li>
                   <li class="list-group" id="whiteText">Confiança e Segurança</li>
                   <li class="list-group" id="whiteText" >Trabalhe Conosco</li>

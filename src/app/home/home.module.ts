@@ -21,8 +21,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   imports: [
-    BrowserAnimationsModule,
+    CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     RouterModule,
     ReactiveFormsModule,

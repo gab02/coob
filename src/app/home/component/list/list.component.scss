@@ -8,10 +8,26 @@
 
 }
 
+@media(max-width:768px) {
+  .clearfix-xs:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+  }
+}
 
 ///MOBILE
 
+body, html{
+  height: 100% !important;
+  margin: 0;
 
+  line-height: 1.42857;
+  max-width: 100%;
+}
 @font-face {
   font-family: myFirstFont;
   src: url(../../../../assets/fonts/Gotham-Font/Gotham-Black.otf);
@@ -220,6 +236,7 @@ color: white;
   display: flex;
   justify-content: center;
   align-self:center;
+ // #0B3A7A;
 }
 
 .form-style1 {

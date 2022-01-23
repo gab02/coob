@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  showFiller = false;
 
   constructor(private wowService: NgwWowService,private router: Router, ) {
     this.wowService.init();
@@ -16,27 +15,26 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.wowService.init();
   }
-howWork(){
-  this.router.navigate([ 'funcionamento']);
+  howWork(){
+    this.router.navigate([ 'funcionamento']);
 
-}
-home(){
-  this.router.navigate([ 'home']);
+  }
+  home(){
+    this.router.navigate([ 'home']);
 
-}
-news(){
-  this.router.navigate([ 'news']);
+  }
+  news(){
+    this.router.navigate([ 'news']);
 
-}
-promotions(){
-  this.router.navigate([ 'promotions']);
+  }
+  promotions(){
+    this.router.navigate([ 'promotions']);
 
-}
-depostiions(){
- this.router.navigate([ 'depositions']);
+  }
+  depostiions(){
+    this.router.navigate([ 'depostions']);
+  }partners(){
+    this.router.navigate([ 'partners']);
 
-}partners(){
-  this.router.navigate([ 'partners']);
-
-}
+  }
 }

@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;
-  /* Hide vertical scrollbar */
-  overflow-x: hidden; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ body {     height: 100% !important;
+  margin: 0;
+
+  font-size: 14.5px;
+  line-height: 1.42857;
+  max-width: 100%;
+overflow-x: hidden;}

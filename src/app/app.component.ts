@@ -9,6 +9,5 @@ import { NgwWowService } from 'ngx-wow';
 export class AppComponent {
   title = 'coob';
   constructor(private wowService: NgwWowService) {
-    this.wowService.init();
   }
 }
