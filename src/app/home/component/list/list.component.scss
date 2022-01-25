@@ -364,12 +364,19 @@ color: white;
 .orangeButton{
   background-color: rgb(230, 162, 61);
   color: rgb(255, 255, 255);
-  border-radius: 15px;
+  border-radius: 100%;
   width: 80%;
   font-size: 14px;
   align-items: center;
   text-align: center;
   align-self: center;
+  font-family: myFirstFont  ;
+}
+.orangeButtonClose{
+  background-color: rgb(230, 162, 61);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  font-size: 14px;
   font-family: myFirstFont  ;
 }
 .pinkButton1{

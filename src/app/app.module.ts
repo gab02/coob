@@ -17,6 +17,7 @@ import { NewsRoutingModule } from './news/news-routing.module';
 import { PromotionsRoutingModule } from './promotions/promotions-routing.module';
 import { PartnersModule } from './partners';
 import { DepositionsModule } from './depositions';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { DepositionsModule } from './depositions';
     DepositionsModule,
     PromotionsRoutingModule,
     PromotionsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

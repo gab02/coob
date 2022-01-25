@@ -2,7 +2,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ListComponent, HomeComponent } from './component';
+import { ListComponent, HomeComponent, DialogContentExampleDialog } from './component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -17,7 +17,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   imports: [
@@ -35,16 +37,16 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,MatNativeDateModule,
     MatDatepickerModule,
     MatSelectModule,
+    MatDialogModule,
     NgwWowModule,
     MatFormFieldModule,
     MatSidenavModule,
-
-
-
+    MatButtonToggleModule,
     FlexLayoutModule,
   ],
   declarations: [
     HomeComponent,
+    DialogContentExampleDialog,
     ListComponent
   ],
   providers: [

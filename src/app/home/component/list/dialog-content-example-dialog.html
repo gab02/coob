@@ -1,0 +1,80 @@
+<mat-dialog-content  >
+  <div class="row">
+    <div class="col">
+      <button mat-button (click)="hotel = false;" style="width: 100%;" class="blueNavButton">
+  Sou Usuário
+    </button>
+    <br><br>
+</div>
+
+
+<div class="col">
+    <button mat-button (click)="hotel = true;" style="width: 100%;" class="blueNavButton">
+      Sou Hoteleiro
+    </button>
+
+  </div>
+  </div>
+  <br>
+
+  <hr style="color: black; width: 100%;">
+
+
+
+  <div class="container" style="padding: 2em;">
+
+    <div *ngIf="hotel === false">
+      <p class="blueText1" style="text-align: center;   line-height: 1.6;
+      ">ASSOCIADO COM CONTA CADASTRADA</p>
+      <br>
+      <mat-form-field class="example-full-width" style="width: 100%;" >
+        <mat-label class="brandText">LOGIN</mat-label>
+        <input matInput type="mail">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" style="width: 100%;" >
+        <mat-label  class="brandText">SENHA</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+      <br><br>
+      <div class="row">
+        <div class="col">
+          </div>
+          <div class="col">
+            <button mat-button class="yellowButton"  style="width: 100%; font-size: 16px;">LOGIN</button>
+          </div>
+          <div class="col">
+          </div>
+      </div>
+      </div>
+
+    <div *ngIf="hotel === true">
+      <p class="blueText1" style="text-align: center; line-height: 1.6;">HOTELEIRO COM CONTA CADASTRADA</p>
+      <br>
+      <mat-form-field class="example-full-width" style="width: 100%;" >
+        <mat-label class="brandText">LOGIN</mat-label>
+        <input matInput type="mail">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" style="width: 100%;" >
+        <mat-label  class="brandText">SENHA</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+      <br><br>
+      <div class="row">
+        <div class="col">
+          </div>
+          <div class="col">
+            <button mat-button class="yellowButton"  style="width: 100%; font-size: 16px;">LOGIN</button>
+          </div>
+          <div class="col">
+          </div>
+      </div>
+    </div>
+
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="orangeButtonClose" mat-button mat-dialog-close><mat-icon>close</mat-icon>
+  </button>
+</mat-dialog-actions>

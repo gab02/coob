@@ -11,11 +11,11 @@
   <button class="navButton  btn-border-5" mat-button (click)="depostiions()">Depoimentos</button>
   <button class="navButton  btn-border-5" mat-button (click)="partners()">Parceiros</button>
 <br><br>
-
 <button mat-button class="yellowButton"  style="width: 100%; font-size: 16px;">ASSINE</button>
+
 <br><br>
 
-<button mat-button style="width: 100%;" class="blueNavButton">
+<button mat-button (click)="openDialog()" style="width: 100%;" class="blueNavButton">
   LOGIN
 </button>
 
@@ -90,12 +90,12 @@
 <div class="wow animate__animated animate__zoomInLeft" style="background-color: rgb(255, 255, 255); border-radius: 10px; ">
   <mat-form-field appearance="fill" style="width: 100%; height: 55px;" >
     <mat-label>Data de entrada e saída</mat-label>
-    <mat-date-range-input [rangePicker]="picker">
+    <mat-date-range-input [rangePicker]="picker1  ">
       <input matStartDate placeholder="Check-in">
       <input matEndDate placeholder="Check-out">
     </mat-date-range-input>
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-date-range-picker #picker></mat-date-range-picker>
+    <mat-date-range-picker #picker1></mat-date-range-picker>
   </mat-form-field>
 </div>
 <br>
@@ -402,12 +402,14 @@
   <img src="../../../../assets/coobHome/logo/rodapecoob289x78px.png">
   <p class="whiteText"> Assine nossa newsletter e receba novidades</p>
  </div>
- <div style="padding: 3em;">
-  <form class="nosubmit">
-    <input class="nosubmit" placeholder="Insira seu melhor email"><br>
-    <button mat-button class="pinkButton1" style=" height: 40px; width: 110%; margin-left: -5%; text-align: center;">ENVIAR </button>
-
+ <div style="padding: 1em;">
+  <div class="row">
+    <form class="nosubmit">
+    <input class="nosubmit" style="width: 90%;" type="text" placeholder="Envie seu email para nós">
   </form>
+
+  <button mat-button class="pinkButton1" style="width: 120px; height: 50px; margin-left: 70%; margin-top: -12%; text-align: center;">ENVIAR </button>
+</div>
   <BR>
   </div>
   <p id="whiteText1"><b>SIGA A COOB+</b></p>
@@ -524,7 +526,7 @@
 
     </div>
     <div class="col-md-2 wow animate__animated animate__zoomInRight" style="animation-delay: 0.5s;">
-      <button mat-button style="width: 70%;" class="blueNavButton">
+      <button (click)="openDialog()" mat-button style="width: 70%;" class="blueNavButton">
           LOGIN
           </button>
     </div>
@@ -1388,7 +1390,7 @@ z-index:1;  " data-bs-ride="carousel">
               <div class="row">
                 <div class="col-md-9">
                 <form class="nosubmit">
-                <input class="nosubmit" type="search" placeholder="Search...">
+                <input class="nosubmit" type="text" placeholder="Envie seu email para nós">
               </form>
               </div>
               <div class="col-md-3">
